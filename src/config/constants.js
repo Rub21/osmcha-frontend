@@ -10,7 +10,7 @@ export const mapboxAccessToken =
   'pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJjam10OXpmc2YwMXI5M3BqeTRiMDBqMHVyIn0.LIcIDe3TZLSDdTWDoojzNg';
 export const statusUrl =
   'https://raw.githubusercontent.com/mapbox/osmcha-frontend/status/status.json';
-export const enableRealChangesets = process.env.REACT_APP_ENABLE_REAL_CHANGESETS
+export const enableRealChangesets = Number(process.env.REACT_APP_ENABLE_REAL_CHANGESETS)
   ? Boolean(process.env.REACT_APP_ENABLE_REAL_CHANGESETS)
   : true;
 
